@@ -29,7 +29,7 @@ Score = 0 #Start with the score as 0
 Order = list(range(0,len(questions)))
 rand.shuffle(Order)
 for qq in Order[0:Num_Rounds]:
-    print("\nQuestion 1:\n"+list(questions.keys())[qq])
+    print("\nQuestion "+str(Order.index(qq)+1)+":\n"+list(questions.keys())[qq])
     Answer = input("Answer: ")
     if Answer == list(questions.values())[qq]:
         print("Correct!")
